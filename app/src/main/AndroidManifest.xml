@@ -22,6 +22,12 @@
         </activity>
         <activity android:name=".PollScreen">
         </activity>
+        <activity android:name=".AccessAPollScreen">
+        </activity>
+        <activity android:name=".CreateAPollScreen">
+        </activity>
+        <activity android:name=".TermsAndConditionsScreen">
+        </activity>
     </application>
 
 </manifest>

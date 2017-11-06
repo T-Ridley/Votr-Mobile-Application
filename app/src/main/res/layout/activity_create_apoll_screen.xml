@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context="tridley.android.votrmobileapplication.CreateAPollScreen">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentStart="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <EditText
+            android:id="@+id/editTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Title..." />
+
+        <EditText
+            android:id="@+id/editOption1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/editTitle"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Option1..." />
+
+        <EditText
+            android:id="@+id/editOption2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/editOption1"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Option2..." />
+
+        <Switch
+            android:id="@+id/addOption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/editOption2"
+            android:text="Add Option"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Poll Expiration Settings"
+            android:textAlignment="center"
+            android:textAppearance="@android:style/TextAppearance.Theme" />
+
+        <DatePicker
+            android:id="@+id/datePicker3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TimePicker
+            android:id="@+id/timePicker2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <CheckBox
+            android:id="@+id/checkBox2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CheckBox" />
+
+        <TextView
+            android:id="@+id/accessCodeGeneratorText"
+            android:layout_width="196dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.05"
+            android:text="Generate Access Code?"
+            android:textAlignment="textEnd"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Widget.TextView"
+            android:textStyle="bold"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/createPoll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Create Poll"
+            android:textAlignment="center" />
+
+    </LinearLayout>
+
+</ScrollView>
+
+</RelativeLayout>
