@@ -15,7 +15,7 @@ public class TermsAndConditionsScreen extends AppCompatActivity {
 
         Button accept;
 
-        accept = (Button) findViewById(R.id.Next);
+        accept = (Button) findViewById(R.id.nextBtn);
         accept.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

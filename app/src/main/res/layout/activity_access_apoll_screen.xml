@@ -1,122 +1,116 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="tridley.android.votrmobileapplication.AccessAPollScreen">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center"
+              android:orientation="vertical"
+              tools:context="tridley.android.votrmobileapplication.AccessAPollScreen">
 
-<Button
-    android:id="@+id/button16"
-    android:layout_width="368dp"
-    android:layout_height="wrap_content"
-    android:text="Category 4"
-    tools:layout_editor_absoluteX="8dp"
-    tools:layout_editor_absoluteY="447dp"
-    android:layout_alignBaseline="@+id/category4"
-    android:layout_alignBottom="@+id/category4"
-    android:layout_alignStart="@+id/category4" />
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="vertical">
 
-<Button
-    android:id="@+id/category4"
-    android:layout_width="368dp"
-    android:layout_height="wrap_content"
-    android:text="Category 4"
-    tools:layout_editor_absoluteX="8dp"
-    tools:layout_editor_absoluteY="402dp"
-    android:layout_alignParentBottom="true"
-    android:layout_alignStart="@+id/textView"
-    android:layout_marginBottom="41dp" />
+        <TextView
+            android:id="@+id/accessAPollHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/accessCodeEditText"
+            android:layout_marginBottom="35dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Access A Poll"
+            android:textAlignment="center"
+            android:textAppearance="@android:style/TextAppearance.StatusBar.Title"
+            android:textSize="24sp"/>
 
-<TextView
-    android:id="@+id/textView"
-    android:layout_width="0dp"
-    android:layout_height="wrap_content"
-    android:layout_marginEnd="8dp"
-    android:layout_marginStart="8dp"
-    android:layout_marginTop="159dp"
-    android:text="Select A Category"
-    android:textAlignment="center"
-    android:textAppearance="@android:style/TextAppearance.Widget.PopupMenu.Large"
-    app:layout_constraintLeft_toLeftOf="parent"
-    app:layout_constraintRight_toRightOf="parent"
-    app:layout_constraintTop_toTopOf="parent"
-    tools:layout_constraintLeft_creator="1"
-    tools:layout_constraintRight_creator="1"
-    tools:layout_constraintTop_creator="1" />
+        <EditText
+            android:id="@+id/accessCodeEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/accessPollBtn"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="Enter Code"
+            android:inputType="numberPassword"
+            android:textAlignment="center"
+            tools:layout_editor_absoluteX="85dp"
+            tools:layout_editor_absoluteY="51dp"/>
 
-<Button
-    android:id="@+id/category2"
-    android:layout_width="368dp"
-    android:layout_height="wrap_content"
-    android:text="Category 2"
-    tools:layout_editor_absoluteX="8dp"
-    tools:layout_editor_absoluteY="258dp"
-    android:layout_above="@+id/category3"
-    android:layout_alignStart="@+id/textView" />
+        <Button
+            android:id="@+id/accessPollBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/pollTitleTV"
+            android:layout_weight="1"
+            android:text="Access"
+            tools:layout_editor_absoluteX="148dp"
+            tools:layout_editor_absoluteY="94dp"/>
+    </LinearLayout>
 
-<Button
-    android:id="@+id/category3"
-    android:layout_width="368dp"
-    android:layout_height="wrap_content"
-    android:text="Category 3"
-    tools:layout_editor_absoluteX="8dp"
-    tools:layout_editor_absoluteY="306dp"
-    android:layout_above="@+id/button16"
-    android:layout_alignStart="@+id/button16" />
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center_vertical|center_horizontal|center"
+        android:orientation="vertical">
 
-<Button
-    android:id="@+id/category5"
-    android:layout_width="368dp"
-    android:layout_height="wrap_content"
-    android:layout_alignStart="@+id/textView"
-    android:layout_below="@+id/button16"
-    android:text="Category 5"
-    tools:layout_editor_absoluteX="8dp"
-    tools:layout_editor_absoluteY="354dp" />
+        <TextView
+            android:id="@+id/selectCategoryTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select A Category"
+            android:textAlignment="center"
+            android:layout_marginBottom="10dp"
+            android:textColor="@android:color/black"
+            android:textSize="24sp"
+            android:textStyle="bold"/>
 
-<Button
-    android:id="@+id/category1"
-    android:layout_width="368dp"
-    android:layout_height="wrap_content"
-    android:layout_above="@+id/category2"
-    android:layout_alignStart="@+id/textView"
-    android:text="Category 1"
-    tools:layout_editor_absoluteX="8dp"
-    tools:layout_editor_absoluteY="210dp" />
+        <Button
+            android:id="@+id/categoryOneBtn"
+            android:layout_width="368dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Category 1"
+            />
 
-<EditText
-    android:id="@+id/editText"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_above="@+id/access"
-    android:layout_centerHorizontal="true"
-    android:ems="10"
-    android:hint="Enter Code"
-    android:inputType="numberPassword"
-    tools:layout_editor_absoluteX="85dp"
-    tools:layout_editor_absoluteY="51dp" />
+        <Button
+            android:id="@+id/categoryTwoBtn"
+            android:layout_width="368dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Category 2"
+            />
 
-<Button
-    android:id="@+id/access"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="Access"
-    tools:layout_editor_absoluteX="148dp"
-    tools:layout_editor_absoluteY="94dp"
-    android:layout_alignTop="@+id/textView"
-    android:layout_centerHorizontal="true" />
+        <Button
+            android:id="@+id/categoryThreeBtn"
+            android:layout_width="368dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Category 3"
+            />
 
-<TextView
-    android:id="@+id/accessAPollText"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_above="@+id/editText"
-    android:layout_centerHorizontal="true"
-    android:layout_marginBottom="35dp"
-    android:text="Access A Poll"
-    android:textAlignment="textStart"
-    android:textAppearance="@android:style/TextAppearance.StatusBar.Title"
-    android:textSize="24sp" />
+        <Button
+            android:id="@+id/categoryFourBtn"
+            android:layout_width="368dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Category 4"
+            />
 
-</RelativeLayout>
+        <Button
+            android:id="@+id/categoryFiveBtn"
+            android:layout_width="368dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Category 5"
+            />
+    </LinearLayout>
+
+</LinearLayout>

@@ -5,67 +5,95 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:layout_gravity="center"
     tools:context="tridley.android.votrmobileapplication.PollScreen">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:gravity="center"
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/pollTitleTV"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="TextView"/>
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif"
+            android:text="Poll Title"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@android:color/black"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:typeface="serif"/>
 
         <TextView
-            android:id="@+id/textView3"
+            android:id="@+id/questionTV"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="TextView"/>
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif"
+            android:text="Question"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="24sp"
+            android:textStyle="bold"/>
 
         <LinearLayout
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Button"/>
+                android:id="@+id/ansOneBtn"
+                android:layout_width="115dp"
+                android:layout_height="75dp"
+                android:text="Answer  One"/>
 
             <Button
-                android:id="@+id/button2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Button"/>
+                android:id="@+id/ansTwoBtn"
+                android:layout_width="115dp"
+                android:layout_height="75dp"
+                android:text="Answer Two"/>
 
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:layout_gravity="center"
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/button3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Button"/>
+                android:id="@+id/ansThreeBtn"
+                android:layout_width="115dp"
+                android:layout_height="75dp"
+                android:text="Answer Three"/>
 
             <Button
-                android:id="@+id/button4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Button"/>
+                android:id="@+id/ansFourBtn"
+                android:layout_width="115dp"
+                android:layout_height="75dp"
+                android:text="Answer Four"/>
 
         </LinearLayout>
+
+        <TextView
+            android:id="@+id/moreInfoTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif"
+            android:text="More Info..."
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="24sp"
+            android:textStyle="bold"/>
 
     </LinearLayout>
 

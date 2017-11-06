@@ -6,52 +6,51 @@
     android:layout_height="match_parent"
     tools:context="tridley.android.votrmobileapplication.TermsAndConditionsScreen">
 
-<TextView
-    android:id="@+id/Terms_and_Conditions"
-    android:layout_width="wrap_content"
-    android:layout_height="65dp"
-    android:text="Terms and Conditons"
-    android:textAppearance="@style/TextAppearance.AppCompat.Title"
-    android:visibility="visible"
-    tools:layout_constraintTop_creator="1"
-    tools:layout_constraintRight_creator="1"
-    app:layout_constraintRight_toRightOf="parent"
-    android:layout_marginTop="71dp"
-    tools:layout_constraintLeft_creator="1"
-    app:layout_constraintLeft_toLeftOf="parent"
-    app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/termsAndConditionsHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="65dp"
+        android:layout_marginTop="71dp"
+        android:text="Terms and Conditons"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:visibility="visible"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1"/>
 
-<CheckBox
-    android:id="@+id/checkBox"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="Accept"
-    android:visibility="visible"
-    tools:layout_constraintBottom_creator="1"
-    app:layout_constraintBottom_toTopOf="@+id/Next"
-    android:layout_marginStart="5dp"
-    tools:layout_constraintLeft_creator="1"
-    android:layout_marginBottom="18dp"
-    app:layout_constraintLeft_toLeftOf="@+id/Next" />
+    <TextView
+        android:id="@+id/termsAndConditionsTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="This is where the terms and conditons go "
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1"/>
 
-<TextView
-    android:id="@+id/Terms_and_Conditions_text"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="This is where the terms and conditons go "
-    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-    android:visibility="visible"
-    tools:layout_constraintTop_creator="1"
-    tools:layout_constraintRight_creator="1"
-    tools:layout_constraintBottom_creator="1"
-    app:layout_constraintBottom_toBottomOf="parent"
-    app:layout_constraintRight_toRightOf="parent"
-    tools:layout_constraintLeft_creator="1"
-    app:layout_constraintLeft_toLeftOf="parent"
-    app:layout_constraintTop_toTopOf="parent" />
+    <CheckBox
+        android:id="@+id/acceptTermsCB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="18dp"
+        android:text="Accept"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/nextBtn"
+        app:layout_constraintLeft_toLeftOf="@+id/nextBtn"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"/>
 
-<Button
-    android:id="@+id/Next"
+    <Button
+    android:id="@+id/nextBtn"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:text="Next"
