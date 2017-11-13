@@ -1,7 +1,9 @@
-package tridley.android.votrmobileapplication;
+package tridley.android.votrmobileapplication.activities;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+
+import tridley.android.votrmobileapplication.R;
 
 public class PollScreen extends AppCompatActivity {
 

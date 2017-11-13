@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="tridley.android.votrmobileapplication">
+    package="tridley.android.votrmobileapplication">
 
     <application
         android:allowBackup="true"
@@ -9,25 +9,22 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".activities.LoginActivity">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER"/>
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".CurrentPollScreen">
-        </activity>
-        <activity android:name=".WelcomeScreen">
-        </activity>
-        <activity android:name=".PollScreen">
-        </activity>
-        <activity android:name=".AccessAPollScreen">
-        </activity>
-        <activity android:name=".CreateAPollScreen">
-        </activity>
-        <activity android:name=".TermsAndConditionsScreen">
-        </activity>
+        <activity android:name=".activities.CurrentPollScreen"/>
+        <activity android:name=".activities.WelcomeScreen"/>
+        <activity android:name=".activities.PollScreen"/>
+        <activity android:name=".activities.AccessAPollScreen"/>
+        <activity android:name=".activities.CreateAPollScreen"/>
+        <activity android:name=".activities.TermsAndConditionsScreen"/>
+        <activity android:name=".activities.RegisterActivity"
+            android:screenOrientation="portrait"/>
+
     </application>
 
 </manifest>
