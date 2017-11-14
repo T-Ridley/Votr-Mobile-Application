@@ -4,7 +4,6 @@ import android.app.Activity;
 import android.content.Context;
 import android.support.design.widget.TextInputEditText;
 import android.support.design.widget.TextInputLayout;
-import android.util.Patterns;
 import android.view.View;
 import android.view.WindowManager;
 import android.view.inputmethod.InputMethodManager;
@@ -34,17 +33,18 @@ public class InputValidation {
 
     public boolean isInputEditTextEmail(TextInputEditText textInputEditText, TextInputLayout textInputLayout, String message){
         String value = textInputEditText.getText().toString().trim();
-        if (value.isEmpty() || Patterns.EMAIL_ADDRESS.matcher(value).matches()){
+       /** if (value.isEmpty() || Patterns.EMAIL_ADDRESS.matcher(value).matches()){
             textInputLayout.setError(message);
             hideKeyboardFrom(textInputEditText);
             return false;
         } else{
             textInputLayout.setErrorEnabled(false);
-        }
+        } **/
         return true;
     }
 
-    public boolean isInputEditTextMatches(TextInputEditText textInputEditText1, TextInputEditText textInputEditText2, TextInputLayout textInputLayout, String message ){
+    public boolean isInputEditTextMatches(TextInputEditText textInputEditText1, TextInputEditText textInputEditText2,
+                                          TextInputLayout textInputLayout, String message ){
         String value1 = textInputEditText1.getText().toString().trim();
         String value2 = textInputEditText2.getText().toString().trim();
 

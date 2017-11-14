@@ -15,20 +15,20 @@ import tridley.android.votrmobileapplication.model.User;
 public class DatabaseHelper extends SQLiteOpenHelper {
     private static final int DATABASE_VERSION = 1;
 
-    private static final String DATABASE_NAME = "UserManager.db";
+    private static final String DATABASE_NAME = "UserManager.db"; //Create Database
 
-    private static final String TABLE_USER = "user";
+    private static final String TABLE_USER = "user"; // Create User entity
 
-    private static final String COLUMN_USER_ID = "user_id";
+    private static final String COLUMN_USER_ID = "user_id"; // User entity attributes
     private static final String COLUMN_USER_NAME = "user_name";
     private static final String COLUMN_USER_EMAIL = "user_email";
     private static final String COLUMN_USER_PASSWORD = "user_password";
 
-    private String CREATE_USER_TABLE = "CREATE TABLE " + TABLE_USER + "("
-            + COLUMN_USER_ID + " INTEGER PRIMARY KEY AUTOINCREMENT," + COLUMN_USER_NAME + " TEXT,"
-            + COLUMN_USER_EMAIL + "TEXT," + COLUMN_USER_PASSWORD + " TEXT" + ")";
+    private String CREATE_USER_TABLE = "CREATE TABLE " + TABLE_USER + " ("
+            +COLUMN_USER_ID+ " INTEGER PRIMARY KEY AUTOINCREMENT," + COLUMN_USER_NAME + " TEXT,"
+            + COLUMN_USER_EMAIL+ " TEXT," + COLUMN_USER_PASSWORD + " TEXT" + ");"; //Putting values into entity
 
-    private String DROP_USER_TABLE = "DROP TABLE IF EXISTS " + TABLE_USER;
+    private String DROP_USER_TABLE = "DROP TABLE IF EXISTS " + TABLE_USER; //Dropping user table set if exists
 
     public DatabaseHelper(Context context){
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
@@ -41,7 +41,9 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion){
+        // Dropping older table if exists
         db.execSQL(DROP_USER_TABLE);
+        // Create tables again
         onCreate(db);
     }
 
