@@ -4,6 +4,7 @@
                 xmlns:tools="http://schemas.android.com/tools"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:background="@drawable/fadedbar"
                 tools:context="tridley.android.votrmobileapplication.activities.CreateAPollScreen">
 
 <ScrollView
@@ -27,7 +28,8 @@
             android:layout_alignParentTop="true"
             android:ems="10"
             android:inputType="textPersonName"
-            android:text="Title..." />
+            android:text="Title..."
+            android:textColor="@android:color/white" />
 
         <EditText
             android:id="@+id/editOption1"
@@ -38,7 +40,8 @@
             android:layout_below="@+id/editTitle"
             android:ems="10"
             android:inputType="textPersonName"
-            android:text="Option1..." />
+            android:text="Option1..."
+            android:textColor="@android:color/white" />
 
         <EditText
             android:id="@+id/editOption2"
@@ -49,7 +52,8 @@
             android:layout_below="@+id/editOption1"
             android:ems="10"
             android:inputType="textPersonName"
-            android:text="Option2..." />
+            android:text="Option2..."
+            android:textColor="@android:color/white" />
 
         <Switch
             android:id="@+id/addOption"
@@ -58,49 +62,54 @@
             android:layout_alignParentStart="true"
             android:layout_below="@+id/editOption2"
             android:text="Add Option"
-            android:textAlignment="center" />
+            android:textAlignment="center"
+            android:textColor="@android:color/white" />
 
         <TextView
-            android:id="@+id/textView3"
+            android:id="@+id/pollexpirationsettings"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Poll Expiration Settings"
             android:textAlignment="center"
-            android:textAppearance="@android:style/TextAppearance.Theme" />
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
-        <DatePicker
-            android:id="@+id/datePicker3"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
 
-        <TimePicker
-            android:id="@+id/timePicker2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/dateInsert"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="date"
+                android:text="Date"
+                android:textColor="@android:color/white" />
 
-        <CheckBox
-            android:id="@+id/checkBox2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="CheckBox" />
+            <EditText
+                android:id="@+id/timeInsert"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="time"
+                android:text="Time"
+                android:textColor="@android:color/white" />
 
-        <TextView
-            android:id="@+id/accessCodeGeneratorText"
-            android:layout_width="196dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="0.05"
-            android:text="Generate Access Code?"
-            android:textAlignment="textEnd"
-            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Widget.TextView"
-            android:textStyle="bold"
-            android:visibility="visible" />
+        </LinearLayout>
 
         <Button
-            android:id="@+id/createPoll"
+            android:id="@+id/createPollBtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@drawable/button_border"
             android:text="Create Poll"
-            android:textAlignment="center" />
+            android:textAlignment="center"
+            android:textColor="@android:color/white" />
 
     </LinearLayout>
 

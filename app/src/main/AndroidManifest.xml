@@ -19,9 +19,7 @@
         <activity android:name=".activities.CurrentPollScreen"/>
         <activity android:name=".activities.WelcomeScreen"/>
         <activity android:name=".activities.PollScreen"/>
-        <activity android:name=".activities.AccessAPollScreen"/>
         <activity android:name=".activities.CreateAPollScreen"/>
-        <activity android:name=".activities.TermsAndConditionsScreen"/>
         <activity android:name=".activities.RegisterActivity"
             android:screenOrientation="portrait"/>
 

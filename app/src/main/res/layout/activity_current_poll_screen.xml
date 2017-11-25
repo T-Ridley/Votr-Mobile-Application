@@ -5,6 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/fadedbar"
     tools:context="tridley.android.votrmobileapplication.activities.CurrentPollScreen">
 
 
@@ -25,8 +26,8 @@
                 android:padding="5dp"
                 android:text="Poll Title One"
                 android:textAlignment="textStart"
-                android:textColor="@android:color/black"
-                android:textSize="36sp"/>
+                android:textColor="@android:color/white"
+                android:textSize="36sp" />
         </ScrollView>
     </LinearLayout>
 

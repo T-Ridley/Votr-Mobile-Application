@@ -135,5 +135,6 @@
     <string name="error_valid_email_password">Wrong Email or Password</string>
     <string name="text_member">Already a member? Login</string>
     <string name="success_message">Success!</string>
+    <string name="select">Select</string>
 
 </resources>

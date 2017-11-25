@@ -5,12 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_gravity="center"
+    android:background="@drawable/fadedbar"
     tools:context="tridley.android.votrmobileapplication.activities.PollScreen">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
+        android:gravity="top|center"
         android:orientation="vertical">
 
         <TextView
@@ -23,10 +24,10 @@
             android:text="Poll Title"
             android:textAlignment="center"
             android:textAllCaps="true"
-            android:textColor="@android:color/black"
+            android:textColor="@android:color/white"
             android:textSize="24sp"
             android:textStyle="bold"
-            android:typeface="serif"/>
+            android:typeface="serif" />
 
         <TextView
             android:id="@+id/questionTV"
@@ -37,9 +38,9 @@
             android:fontFamily="sans-serif"
             android:text="Question"
             android:textAlignment="center"
-            android:textColor="@android:color/black"
+            android:textColor="@android:color/white"
             android:textSize="24sp"
-            android:textStyle="bold"/>
+            android:textStyle="bold" />
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -51,13 +52,18 @@
                 android:id="@+id/ansOneBtn"
                 android:layout_width="115dp"
                 android:layout_height="75dp"
-                android:text="Answer  One"/>
+                android:background="@drawable/button_border"
+                android:outlineProvider="background"
+                android:text="Answer  One"
+                android:textColor="@android:color/white" />
 
             <Button
                 android:id="@+id/ansTwoBtn"
                 android:layout_width="115dp"
                 android:layout_height="75dp"
-                android:text="Answer Two"/>
+                android:background="@drawable/button_border"
+                android:text="Answer Two"
+                android:textColor="@android:color/white" />
 
         </LinearLayout>
 
@@ -71,13 +77,17 @@
                 android:id="@+id/ansThreeBtn"
                 android:layout_width="115dp"
                 android:layout_height="75dp"
-                android:text="Answer Three"/>
+                android:background="@drawable/button_border"
+                android:text="Answer Three"
+                android:textColor="@android:color/white" />
 
             <Button
                 android:id="@+id/ansFourBtn"
                 android:layout_width="115dp"
                 android:layout_height="75dp"
-                android:text="Answer Four"/>
+                android:background="@drawable/button_border"
+                android:text="Answer Four"
+                android:textColor="@android:color/white" />
 
         </LinearLayout>
 
@@ -90,9 +100,9 @@
             android:fontFamily="sans-serif"
             android:text="More Info..."
             android:textAlignment="center"
-            android:textColor="@android:color/black"
+            android:textColor="@android:color/white"
             android:textSize="24sp"
-            android:textStyle="bold"/>
+            android:textStyle="bold" />
 
     </LinearLayout>
 

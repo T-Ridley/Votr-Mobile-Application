@@ -1,0 +1,43 @@
+package tridley.android.votrmobileapplication.activities;
+
+import android.app.Activity;
+import android.app.Dialog;
+import android.os.Bundle;
+import android.view.View;
+import android.view.Window;
+import android.widget.Button;
+import android.widget.DatePicker;
+
+import tridley.android.votrmobileapplication.R;
+
+/**
+ * Created by vondrinho on 11/24/17.
+ */
+
+public class datePickerDialog extends Dialog implements View.OnClickListener {
+    public Activity a;
+    public Dialog d;
+
+    public datePickerDialog (Activity a){
+        super(a);
+
+        this.a = a;
+    }
+
+    @Override
+    public void onCreate(Bundle savedInstanceState){
+        super.onCreate(savedInstanceState);
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
+        setContentView(R.layout.datepicker);
+
+        DatePicker datepicker = (DatePicker) findViewById(R.id.datePicker);
+        Button select = (Button) findViewById(R.id.selectButton);
+    }
+
+
+    @Override
+    public void onClick (View v){
+
+    }
+
+}

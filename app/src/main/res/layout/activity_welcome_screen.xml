@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.widget.RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/fadedbar"
     tools:context="tridley.android.votrmobileapplication.activities.WelcomeScreen">
 
     <LinearLayout
@@ -13,38 +15,62 @@
         android:orientation="vertical"
         >
 
-        <Button
-            android:id="@+id/createPollBtn"
-            android:layout_width="200dp"
-            android:layout_height="75dp"
-            android:background="@android:color/darker_gray"
-            android:fontFamily="sans-serif"
-            android:text="Create a Poll"
-            android:textSize="18sp"
-            android:layout_marginBottom="20dp"
-            android:textStyle="bold"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
-        <Button
-            android:id="@+id/accessPollBtn"
-            android:layout_width="200dp"
-            android:layout_height="75dp"
-            android:background="@android:color/darker_gray"
-            android:fontFamily="sans-serif"
-            android:text="Access a Poll"
-            android:textSize="18sp"
-            android:layout_marginBottom="20dp"
-            android:textStyle="bold"/>
+            <Button
+                android:id="@+id/currentPollBtn"
+                android:layout_width="200dp"
+                android:layout_height="75dp"
+                android:layout_below="@+id/accessPollBtn"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/button_border"
+                android:fontFamily="sans-serif"
+                android:text="Current Poll(s)"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
-        <Button
-            android:id="@+id/currentPollBtn"
-            android:layout_width="200dp"
-            android:layout_height="75dp"
-            android:background="@android:color/darker_gray"
-            android:fontFamily="sans-serif"
-            android:text="Current Poll(s)"
-            android:textSize="18sp"
-            android:layout_marginBottom="20dp"
-            android:textStyle="bold"/>
+            <Button
+                android:id="@+id/accessPollBtn"
+                android:layout_width="200dp"
+                android:layout_height="75dp"
+                android:layout_alignStart="@+id/currentPollBtn"
+                android:layout_below="@+id/createPollBtn"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/button_border"
+                android:fontFamily="sans-serif"
+                android:text="Access a Poll"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/createPollBtn"
+                android:layout_width="200dp"
+                android:layout_height="75dp"
+                android:layout_alignStart="@+id/accessPollBtn"
+                android:layout_below="@+id/imageView3"
+                android:layout_marginTop="69dp"
+                android:background="@drawable/button_border"
+                android:fontFamily="sans-serif"
+                android:text="Create a Poll"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="49dp"
+                app:srcCompat="@drawable/logo" />
+        </RelativeLayout>
+
     </LinearLayout>
 
 </android.widget.RelativeLayout>
