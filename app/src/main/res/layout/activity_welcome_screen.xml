@@ -53,7 +53,7 @@
                 android:layout_height="75dp"
                 android:layout_alignStart="@+id/accessPollBtn"
                 android:layout_below="@+id/imageView3"
-                android:layout_marginTop="69dp"
+                android:layout_marginTop="51dp"
                 android:background="@drawable/button_border"
                 android:fontFamily="sans-serif"
                 android:text="Create a Poll"
